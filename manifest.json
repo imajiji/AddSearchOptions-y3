@@ -1,0 +1,15 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Add Search Options",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "",
+  "author": "",
+  "content_scripts": [{
+    "matches": ["*://www.google.com/*", "*://www.google.co.jp/*"],
+    "run_at": "document_end",
+    "js": ["script.js"],
+    "all_frames": true
+  }]
+}
